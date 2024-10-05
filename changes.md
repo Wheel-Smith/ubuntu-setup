@@ -5,6 +5,7 @@
 - discord?
 - libreoffice
 - spotify? 
+- tree
 
 ## issues
 
