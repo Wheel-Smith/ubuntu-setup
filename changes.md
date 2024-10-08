@@ -8,7 +8,7 @@
 - tree
 
 ## issues
-
+- missing install scripts for above software
 
 ## To-do:
 - make changes to omakub application (after satisfied with the setup)

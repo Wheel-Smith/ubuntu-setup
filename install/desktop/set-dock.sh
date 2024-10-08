@@ -11,7 +11,7 @@ apps=(
   "pinta_pinta.desktop"
   "Activity.desktop"
   "Docker.desktop"
-  "Omakub.desktop"
+  "Setup.desktop"
   "org.gnome.Settings.desktop"
   "org.gnome.Nautilus.desktop"
 )

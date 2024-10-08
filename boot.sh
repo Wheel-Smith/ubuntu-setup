@@ -12,7 +12,7 @@ EOF
 )
 
 echo "$ascii_art"
-echo "=> Omakub is for fresh Ubuntu 24.04 installations only!"
+echo "=> This setup is for fresh Ubuntu 24.04 installations only!"
 echo -e "\nBegin installation (or abort with ctrl+c)..."
 
 exit 1
@@ -21,13 +21,15 @@ sudo apt-get update >/dev/null
 sudo apt-get install -y git >/dev/null
 
 echo "Cloning Omakub..."
-rm -rf ~/.local/share/omakub
-git clone https://github.com/basecamp/omakub.git ~/.local/share/omakub >/dev/null
-if [[ $OMAKUB_REF != "master" ]]; then
-  cd ~/.local/share/omakub
-  git fetch origin "${OMAKUB_REF:-stable}" && git checkout "${OMAKUB_REF:-stable}"
+rm -rf ~/.local/share/setup
+git clone https://github.com/Wheel-Smith/ubuntu-setup.git ~/.local/share/setup >/dev/null
+
+# Default to the "main" branch if $BRANCH_SET is not set
+if [[ ${BRANCH_SET:-main} != "main" ]]; then
+  cd ~/.local/share/setup
+  git fetch origin "${BRANCH_SET:-main}" && git checkout "${BRANCH_SET:-main}"
   cd -
 fi
 
 echo "Installation starting..."
-source ~/.local/share/omakub/install.sh
+source ~/.local/share/setup/install.sh
