@@ -1,5 +1,5 @@
 CHOICES=(
-  "Omakub        Update Omakub itself and run any migrations"
+  "setup        Update setup itself and run any migrations"
   "Ollama        Run LLMs, like Meta's Llama3, locally"
   "LazyGit       TUI for Git"
   "LazyDocker    TUI for Docker"
@@ -17,7 +17,7 @@ else
   INSTALLER=$(echo "$CHOICE" | awk -F ' {2,}' '{print $1}' | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
 
   case "$INSTALLER" in
-  "omakub") INSTALLER_FILE="$SETUP_PATH/bin/omakub-sub/migrate.sh" ;;
+  "setup") INSTALLER_FILE="$SETUP_PATH/bin/setup-sub/migrate.sh" ;;
   "localsend") INSTALLER_FILE="$SETUP_PATH/install/desktop/app-localsend.sh" ;;
   "ollama") INSTALLER_FILE="$SETUP_PATH/install/terminal/optional/app-ollama.sh" ;;
   *) INSTALLER_FILE="$SETUP_PATH/install/terminal/app-$INSTALLER.sh" ;;
@@ -27,4 +27,4 @@ else
 fi
 
 clear
-source $SETUP_PATH/bin/omakub
+source $SETUP_PATH/bin/setup

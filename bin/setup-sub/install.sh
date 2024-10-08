@@ -44,4 +44,4 @@ else
 fi
 
 clear
-source $SETUP_PATH/bin/omakub
+source $SETUP_PATH/bin/setup

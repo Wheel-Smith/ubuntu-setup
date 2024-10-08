@@ -3,7 +3,7 @@ cat <<EOF >~/.local/share/applications/Setup.desktop
 Version=1.0
 Name=Setup
 Comment=Setup Controls
-Exec=alacritty --config-file /home/$USER/.local/share/setup/defaults/alacritty/pane.toml --class=Setup --title=Setup -e omakub
+Exec=alacritty --config-file /home/$USER/.local/share/setup/defaults/alacritty/pane.toml --class=Setup --title=Setup -e setup
 Terminal=false
 Type=Application
 Icon=/home/$USER/.local/share/setup/applications/icons/Setup.png

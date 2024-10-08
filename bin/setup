@@ -4,4 +4,4 @@ source $SETUP_PATH/ascii.sh
 echo "" # Add spacing
 echo "                                 $(cat $SETUP_PATH/version)"
 echo "" # Add spacing
-source $SETUP_PATH/bin/omakub-sub/menu.sh
+source $SETUP_PATH/bin/setup-sub/menu.sh

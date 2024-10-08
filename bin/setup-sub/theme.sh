@@ -16,4 +16,4 @@ if [ -n "$THEME" ] && [ "$THEME" != "<<-back" ]; then
   # source $SETUP_PATH/themes/$THEME/chrome.sh
 fi
 
-source $SETUP_PATH/bin/omakub-sub/menu.sh
+source $SETUP_PATH/bin/setup-sub/menu.sh

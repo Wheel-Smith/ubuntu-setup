@@ -41,9 +41,9 @@ case $choice in
   set_font "MesloLGS Nerd Font" "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Meslo.zip" "ttf"
   ;;
 "> Change size")
-  source $SETUP_PATH/bin/omakub-sub/font-size.sh
+  source $SETUP_PATH/bin/setup-sub/font-size.sh
   exit
   ;;
 esac
 
-source $SETUP_PATH/bin/omakub-sub/menu.sh
+source $SETUP_PATH/bin/setup-sub/menu.sh

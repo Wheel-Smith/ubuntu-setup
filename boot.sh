@@ -20,7 +20,7 @@ exit 1
 sudo apt-get update >/dev/null
 sudo apt-get install -y git >/dev/null
 
-echo "Cloning Omakub..."
+echo "Cloning Setup repo..."
 rm -rf ~/.local/share/setup
 git clone https://github.com/Wheel-Smith/ubuntu-setup.git ~/.local/share/setup >/dev/null
 

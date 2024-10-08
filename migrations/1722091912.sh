@@ -10,5 +10,5 @@ source $SETUP_PATH/applications/Basecamp.sh
 source $SETUP_PATH/applications/HEY.sh
 source $SETUP_PATH/applications/Docker.sh
 source $SETUP_PATH/applications/Neovim.sh
-source $SETUP_PATH/applications/Omakub.sh
+source $SETUP_PATH/applications/Setup.sh
 source $SETUP_PATH/applications/WhatsApp.sh
