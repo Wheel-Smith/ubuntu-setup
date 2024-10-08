@@ -1,2 +1,2 @@
 xdg-open "https://manual.omakub.org" >/dev/null
-source $OMAKUB_PATH/bin/omakub-sub/menu.sh
+source $SETUP_PATH/bin/omakub-sub/menu.sh

@@ -1,4 +1,4 @@
-OMAKUB_THEME_COLOR="red"
-OMAKUB_THEME_BACKGROUND="rose-pine/background.jpg"
-source $OMAKUB_PATH/themes/set-gnome-theme.sh
+SETUP_THEME_COLOR="red"
+SETUP_THEME_BACKGROUND="rose-pine/background.jpg"
+source $SETUP_PATH/themes/set-gnome-theme.sh
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'
